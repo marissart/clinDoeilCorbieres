@@ -1,0 +1,135 @@
+/* page.module.css */
+.container {
+  height: 100dvh;
+  overflow-y: hidden;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4dvh 2rem;
+  min-height: 88vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 15dvh;
+  background: #fdfffc;
+  /* background: linear-gradient(0deg, rgba(253,253,253,1) 0%, rgba(255,238,228,1) 45%, rgba(168,124,99,1) 100%); */
+}
+
+.logos {
+  opacity: 1 !important;
+  /* height: 10dvh; */
+  height: auto !important;
+  aspect-ratio: auto;
+  width: 70% !important;
+}
+.logoColShow {
+  /* position: relative !important; */
+  transform: none !important;
+  opacity: 1;
+}
+
+.textCol p {
+  margin: 0;
+}
+
+.textCol{
+  position: absolute;
+  opacity: 0;
+  top : 10% ;
+  left: 0% ;
+  height: 18dvh;
+  transition: all 2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoColShow:nth-child(1) {
+  top : 0% ;
+  left: 0% ;
+}
+
+.logoColShow:nth-child(2) {
+  top : 0% ;
+  left: 33% ;
+}
+
+.logoColShow:nth-child(3) {
+  top : 0% ;
+  left: 66% ;
+}
+
+.logoColShow:nth-child(4) {
+  top : 33% ;
+  left: 0% ;
+}
+
+.logoColShow:nth-child(5) {
+  top : 33% ;
+  left: 33% ;
+}
+
+.logoColShow:nth-child(6) {
+  top : 33% ;
+  left: 66% ;
+}
+
+.logoColShow:nth-child(7) {
+  top : 66% ;
+  left: 15% ;
+}
+
+.logoColShow:nth-child(8) {
+  top : 66% ;
+  left: 55% ;
+}
+
+.images{
+  width: 100%;
+  height: auto;
+}
+
+.imagesCol{
+  bottom: 0;
+  padding :0 !important;
+  height: 40dvh;
+  opacity: 0;
+  transition: all 2s ease;
+}
+.imagesRow {
+  z-index: 0;
+  width: 100dvw;
+  position: fixed;
+  margin-bottom: -6dvh;
+  transition: all 1s ease-in;
+}
+
+.nothing{
+  display: none;
+  opacity: 0;
+}
+.logosRow{
+  z-index: 2;
+  position: relative;
+  width: 80% !important;
+  justify-content: center;
+  align-items: center;
+  height: 83dvh;
+}
+
+.logoCol{
+  height: 18dvh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* opacity: 0; */
+  transition: all 1s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

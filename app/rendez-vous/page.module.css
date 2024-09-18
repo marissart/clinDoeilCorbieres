@@ -1,0 +1,190 @@
+/* page.module.css */
+.container {
+  /* height: 100dvh;
+  overflow-y: hidden; */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  min-height: 88vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* margin-top:18dvh; */
+  background: rgb(253, 253, 253);
+
+}
+
+.title {
+  font-size: 3rem;
+  color: #a87c63;
+  font-weight: 600;
+}
+
+.banner {
+  width: 100vw;
+  padding: 4dvh 4vw;
+
+  @media (min-width : 1200px) {
+    height: 90vh;
+    margin-top: 10dvh !important;
+  }
+
+  height: 75dvh;
+  overflow-y: scroll;
+
+  align-items: center;
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/ordinateur.jpg');
+  background-image: url('/contact.jpg');
+}
+
+.inputGroup {
+  font-size: 1.2rem !important;
+  position: relative !important;
+
+ 
+
+  margin: 2.6rem 0;
+}
+
+.label {
+  position: absolute;
+  left: 0;
+  top: -10% !important;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: #fdfffc;
+
+
+}
+
+
+.selectGroup {
+
+  margin: 1% 0 20% 0;
+  font-size: 1.2rem !important;
+}
+
+.input {
+  color: #fdfffc !important;
+  padding: 0.8rem;
+  outline: none !important;
+  border: 2.5px solid rgb(200, 200, 200);
+  background-color: transparent !important;
+  border-radius: 20px !important;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form {
+
+  /* margin-top: 10dvh;
+  @media (min-width:798px) {
+      margin-top: 0dvh;
+  } */
+  border: 2px solid #fdfffc;
+  background: rgba(141, 135, 136, 0.6);
+
+  @media (min-width : 1200px) {
+    padding: 6vh 2vw;
+  }
+
+  padding: 2.5vh 4vw;
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  border-color: #fdfffc !important;
+  border: 3px solid rgb(200, 200, 200) !important;
+  box-shadow: none !important;
+}
+
+
+.input:focus~.label {
+  transform: translateY(-100%) scale(1.1) !important;
+  font-weight: 600 !important;
+  margin: 0;
+  padding: 0.4em;
+}
+
+.input:not(:placeholder-shown)  ~ .label {
+  transform: translateY(-100%) scale(0.9);
+  margin: 0;
+  padding: 0.4em;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.select {
+  padding: 0.8rem;
+  outline: none;
+  border: 2.5px solid rgb(200, 200, 200);
+  background-color: transparent !important;
+  border-radius: 20px;
+  width: 100%;
+  cursor: pointer;
+  margin:0;
+  color: #fdfffc;
+}
+
+.dropdownContent {
+  padding: 0.3rem;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: #fdfffc !important;
+  border: 2.5px solid rgb(200, 200, 200);
+  border-top: none;
+  border-radius: 0px 15px 15px 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  height: fit-content;
+  overflow-y: scroll;
+  
+}
+
+.option:hover {
+  cursor: pointer;
+}
+
+ .option:focus {
+  background-color: #212121;
+  color: #fdfffc;
+}
+
+.dropdownContent #top:hover {
+  border-radius: 0px 13px 0px 0px;
+}
+
+.dropdownContent #bottom:hover {
+  border-radius: 0px 0px 13px 13px;
+}
+
+.select:hover {
+  border-radius: 20px 20px 20px 0px;
+}
+
+.selectGroup:hover .select {
+  border-radius: 20px 20px 20px 0px !important;
+}
+.form-control {
+  font-size: 1.2rem !important;
+}
+
+.select:hover ~ .dropdownContent {
+  display: block;
+}
+.dropdownContent:hover {
+  display: block;
+}

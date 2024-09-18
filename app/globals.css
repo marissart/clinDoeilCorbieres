@@ -8,7 +8,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-
+  --primary : #a87c63
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -72,6 +72,56 @@
     --card-border-rgb: 200, 200, 200;
   }
 }
+
+.endRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.button {
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100% !important;
+  min-width: fit-content;
+  text-align: center;
+
+  z-index: 2;
+}
+
+.button-top {
+  display: block;
+  box-sizing: border-box;
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+.button:hover .button-top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+.button:active .button-top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+.transparent {
+  background-color: #fffefebc;
+  border: 3px solid #fdfffc;
+  color: #03071e;
+}
+
+@font-face { 
+  font-family: "Gracetian"; 
+  src: url('./font/Orchid-BF651e660a9aa86.otf'); 
+  font-weight: normal; 
+  font-style: normal; 
+  font-display: swap;
+} 
 
 * {
   box-sizing: border-box;

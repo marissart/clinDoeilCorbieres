@@ -1,0 +1,151 @@
+
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+
+
+@media only screen and (max-width: 1024px) {
+    #title {
+        font-size: 22px !important;
+    }
+
+    #buttonsDiv{
+        display: none !important;
+    }
+    #menuDiv {
+        background-color: #fdfffc;
+        height: fit-content;
+        width: fit-content;
+        padding: 1vh 4vw;
+        position: absolute;
+        top: 10vh;
+        right : 0vw;
+        z-index: 2;
+        font-family: "Comfortaa" ;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .menuOption{
+        cursor: pointer;
+        font-size: 15px;
+    }
+  
+  }
+
+  @media only screen and (min-width: 1024px) {
+    #menu {
+        display: none;
+    }
+
+    #menuDiv {
+        display: none;
+    }
+  
+  }
+  
+  #container {
+    z-index: 6 !important;
+    font-family: "Comfortaa" ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3vh 2dvw !important;
+    width: 100%;
+    min-height: 80px;
+    max-height: 110px;
+    height: 13dvh;
+    opacity: 1;
+    background: #a87c63;
+    color: #fdfffc !important;
+    display: flex;
+   position: fixed;
+   top: 0;
+   left: 0;
+    justify-content: space-between;
+    transition:
+    width 1s,
+    height 1s,
+    opacity 1s, ;
+    /* position:sticky;
+    top: 0; */
+    z-index: 2;
+}
+
+.telephone {
+    font-size: 1.3rem;
+    margin: 0 1vw;
+}
+
+.icon{
+    cursor: pointer;
+    margin-right: 1vw;
+    color: #fdfffc !important;
+}
+
+#logo {
+
+min-width: 80px;
+max-width: 105px;
+height: auto;
+width: 13dvh;
+}
+
+
+#buttonsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35vw;
+    font-size: 1.3rem;
+    margin-left: 10vw;
+}
+
+.buttonDiv{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.buttonSpan {
+    margin-top: 5px;
+    width: 0;
+ border-bottom: #fdfffc 1px solid
+}
+.buttonDiv:hover .buttonSpan{
+    width: 120%;
+    transition: 
+    width 0.6s;
+ border-bottom: #fdfffc 2px solid;
+}
+
+#title {
+    font-family: "Wanderer";
+    height: fit-content;
+    font-size: 5vh;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#logoDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* height: 10vh; */
+
+    
+    margin-left: 4vw;
+}
+
+#iconDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
+    margin-right: 2vw;
+    font-weight: 300;
+}
+
+.icon{
+    cursor: pointer;
+    margin-right: 1vw;
+}

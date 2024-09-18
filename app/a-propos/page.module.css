@@ -1,0 +1,95 @@
+/* page.module.css */
+.container {
+  /* height: 100dvh;
+  overflow-y: hidden; */
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  min-height: 88vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* margin-top:18dvh; */
+  background: rgb(253,253,253);
+
+}
+
+.title{
+  font-size: 3rem;
+  color: #a87c63;
+  font-weight: 600;
+}
+
+.banner {
+  width: 100vw;
+  padding: 4dvh 4vw;
+  @media (min-width : 1200px) {
+    height: 80vh;
+  }
+  height: 75dvh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 4vh;
+  background-image: url('/ordinateur.jpg');
+  background-image: url('/caisse.jpg');
+}
+
+.mainRowImage{
+  position:relative;
+  
+  height: auto;
+  border: #a87c63 2px solid;
+}
+
+#etageres{
+  width: 13dvw;
+  z-index: 2;
+  left : 2dvw;
+  
+  /* top:4dvh */
+}
+
+#caisse{
+  width: 25dvw;
+  /* left : -4dvw */
+  /* top:4dvh */
+}
+
+.mainRow{
+  align-items: center;
+  padding: 4dvh 0 23dvh 0;
+  
+}
+
+.lastRowImage {
+  height: auto;
+  width: 97%;
+}
+
+.lastRow {
+  /* margin-bottom: 10dvh; */
+  height: 10dvw;
+  width: 100dvw;
+  background-color: #a87c63;
+  justify-content: space-between;
+  
+  /* align-items: flex-end; */
+}
+
+.lastRowCol {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  position:relative;
+  bottom: 8dvw;
+  padding: 0 !important;
+}
