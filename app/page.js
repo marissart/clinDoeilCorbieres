@@ -68,7 +68,7 @@ export default function Home() {
 
           {(selectedIndex !== null) &&
             <Row className={styles.imageSection} ><Col xs={{ size: 6, offset: 0 }} lg={{ size: 4, offset: 0 }}>
-              <p className={styles.visible}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <p className={styles.visible}>Lorem psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
             </Col>
               {images.map((src, index) => {
                 if (selectedIndex === index) return (
