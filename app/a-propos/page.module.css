@@ -84,7 +84,7 @@
 }
 
 .lastRowImage {
-  height: 30dvh;
+  height: 26dvh;
   @media (min-width : 1200px) {
  width: 97%;  
  height: auto;
@@ -115,6 +115,6 @@
    
   bottom: 8dvw;
   }
-  bottom: 14dvh;
+  bottom: 13dvh;
   padding: 0 !important;
 }
