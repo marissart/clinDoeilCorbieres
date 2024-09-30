@@ -84,16 +84,17 @@
 }
 
 .lastRowImage {
-  height: auto;
+  height: 30dvh;
   @media (min-width : 1200px) {
  width: 97%;  
+ height: auto;
   }
-  width: 100%;
+  width: auto;
 }
 
 .lastRow {
   /* margin-bottom: 10dvh; */
-  height: 7dvh;
+  height: 15dvh;
   width: 100dvw;
   background-color: #a87c63;
   justify-content: center;
