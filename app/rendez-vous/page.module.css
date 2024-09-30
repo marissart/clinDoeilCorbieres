@@ -33,7 +33,7 @@
     
   justify-content: flex-start;
   }
-  margin-top: 13dvh !important;
+  margin-top: 12dvh !important;
   height: 87dvh;
   overflow-y: scroll;
   display: flex;
@@ -103,7 +103,7 @@
     padding: 6vh 2vw;
   }
 
-  padding: 2.5vh 4vw;
+  padding: 4vh 4vw;
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
   border-radius: 10px;

@@ -54,7 +54,7 @@ export default function Home() {
       <main className={styles.main}>
         <Row className={styles.banner}>
          {!show && <Col lg={{size : 4}} className={styles.form}>
-          <Row>
+          <Row className="d-none d-lg-flex">
             <Col lg={{size : 5}} >
             <FormGroup>
         <div className={styles.inputGroup} style={{margin : '0 0'}}>
@@ -91,7 +91,37 @@ export default function Home() {
           </Col>
           </Row>
           
-      
+          <FormGroup className="d-lg-none">
+        <div className={styles.inputGroup} >
+          <Input
+            invalid={!valide1}
+            onChange={handleInputChange}
+            value={contactState.nom}
+            className={styles.input}
+            placeholder=""
+            type="text"
+            style={{margin : '0 0'}}
+            name='nom'
+          />
+          <label className={styles.label} >Nom</label>
+        </div>
+      </FormGroup>
+
+          <FormGroup className="d-lg-none">
+        <div className={styles.inputGroup} >
+          <Input
+            invalid={!valide2}
+            onChange={handleInputChange}
+            value={contactState.prenom}
+            className={styles.input}
+            placeholder=""
+            type="text"
+            name='prenom'
+            style={{margin : '0 0'}}
+          />
+          <label className={styles.label}>Prénom</label>
+        </div>
+      </FormGroup>
       <FormGroup>
         <div className={styles.inputGroup}>
           <Input
