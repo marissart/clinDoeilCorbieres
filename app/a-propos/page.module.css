@@ -89,7 +89,8 @@
  width: 97%;  
  height: auto;
   }
-  width: auto;
+  width: auto !important;
+  aspect-ratio:initial !important;
 }
 
 .lastRow {
