@@ -59,7 +59,7 @@ export default function Home() {
       <main className={styles.main}>
         <Row className={styles.bannerDiv}>
           <Col lg={{ size: 5, offset: 0 }} style={{ width: 'fit-content' }}>
-            <Button text='Prendre rendez-vous' />
+          <a href="/rendez-vous" style={{ textDecoration: "none", color: '#fdfffc' }}><Button text='Prendre rendez-vous' /></a>
           </Col>
         </Row>
         <Row className={styles.Row}>

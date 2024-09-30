@@ -15,20 +15,22 @@ export default function Home() {
   const [valide2, setValide2] = useState(true);
   const [valide3, setValide3] = useState(true)
   const [valide4, setValide4] = useState(true)
+  
+  const [valide5, setValide5] = useState(true)
   function handelClick() {
-    console.log("🚀 ~ file: Professionnels.js:152 ~ handelClick ~ state.no:", state.nom)
-    if (!state.nom || !state.prenom || !state.mail || !state.phone || !state.state) {
+    console.log("🚀 ~ file: Professionnels.js:152 ~ handelClick ~ contactState.no:", contactState.nom)
+    if (!contactState.nom || !contactState.prenom || (!contactState.mail && !contactState.phone) || !contactState.option) {
 
-      if (!state.prenom) { setValide1(true) }
-      if (!state.nom) { setValide2(true) }
-      if (!state.firm) { setValide3(true) }
-      if (!state.mail) { setValide4(true) }
-      if (!state.phone) { setValide5(true) }
+      if (!contactState.prenom) { setValide1(true) }
+      if (!contactState.nom) { setValide2(true) }
+      if (!contactState.option) { setValide5(true) }
+      if (!contactState.mail) { setValide4(true) }
+      if (!contactState.phone) { setValide3(true) }
     } else {
       fetch('https://agencenuisiblesbackend/contact/marianne', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ state }),
+        body: JSON.stringify({ contactState }),
       })
       setState({})
       setShow(true)
@@ -165,14 +167,14 @@ export default function Home() {
           </div>
           <Row className='endRow  d-none d-lg-flex' style={{ padding: '0 10%', width:'95%', marginTop:"2rem" }}>
         <Col md={{ size: 5 }} lg={{ size: 4 }} xl={{ size: 3 }}>
-          <div className='button'>
+          <div className='button' onClick={() => handelClick()}>
             <div  className='button-top transparent'>Valider</div>
           </div>
         </Col>
       </Row>
       <Row className='endRow d-lg-none' style={{  width:'90% ', marginTop:"2rem", display:'flex', flex:'row', justifyContent:'center', marginLeft:'5%' }}>
         <Col md={{ size: 6 }} lg={{ size: 4 }} xl={{ size: 3 }}>
-          <div className='button'>
+          <div className='button'  onClick={() => handelClick()}>
             <div  className='button-top transparent'>Valider</div>
           </div>
         </Col>

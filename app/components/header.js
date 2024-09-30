@@ -28,8 +28,8 @@ export default function Header(props) {
                 </div>
                 <div id={styles.iconDiv}>
                     <p className={styles.telephone}>04 11 66 95 10</p>
-                    <FontAwesomeIcon icon={faFacebook} className={`${styles.icon} d-lg-flex d-none`} />
-                    <FontAwesomeIcon icon={faInstagram} className={`${styles.icon} d-lg-flex d-none`} />
+                    <a href="https://www.facebook.com/profile.php?id=61561630965244" style={{ textDecoration: "none", color: '#fdfffc' }}>  <FontAwesomeIcon icon={faFacebook} className={`${styles.icon} d-lg-flex d-none`} /></a>
+                    <a href="https://www.instagram.com/clindoeildescorbieres/" style={{ textDecoration: "none", color: '#fdfffc' }}> <FontAwesomeIcon icon={faInstagram} className={`${styles.icon} d-lg-flex d-none`} /></a>
                     {/* <UseAnimations animation={linkedin} size={35} className={styles.icon} /> */}
                     <FontAwesomeIcon icon={faBars}  className={styles.icon} id={styles.menu} onClick={() => setShow(!show)} />
                 </div>
