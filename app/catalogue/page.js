@@ -132,7 +132,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Header />
-      <main className={styles.main} style={((selected === null)  ? {justifyContent:'center'} : {justifyContent:'flex-start !important'})}>
+      <main className={styles.main} style={((selected === null)  ? {justifyContent:'center'} : {})}>
         <Row className={styles.logosRow} onMouseEnter={() => setShow(true)}>
 
           {marquesDisplay}
