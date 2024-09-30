@@ -90,7 +90,7 @@ export default function Home() {
       console.log(style)
     }
     return (
-      <Col onMouseEnter={() => setShow(true)} lg={{ size: 4 }} xs={{ size: (selected !== null) ? 11 : 6 }} className={`${styles.logoCol}  ${show ? styles.logoColShow : styles.nothing}`} style={style}>
+      <Col onMouseEnter={() => setShow(true)} lg={{ size: 4 }} xs={{ size: (selected !== null) ? 9 : 6 }} className={`${styles.logoCol}  ${show ? styles.logoColShow : styles.nothing}`} style={style}>
         <Image
           onClick={() => (selected === null) ? setSelected(m.name) : setSelected(null)}
           height={300}
@@ -132,7 +132,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Header />
-      <main className={styles.main}>
+      <main className={styles.main} style={((selected === null)  ? {justifyContent:'center'} : {justifyContent:'flex-start !important'})}>
         <Row className={styles.logosRow} onMouseEnter={() => setShow(true)}>
 
           {marquesDisplay}
