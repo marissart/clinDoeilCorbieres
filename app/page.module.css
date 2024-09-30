@@ -80,8 +80,12 @@
 }
 
 .browCircle{
-  width: 120px !important;
-  height: 120px !important;
+  @media (min-width : 1200px) {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  width:0px !important;
+  height: 0px !important;
   border-radius: 50%;
   background-color: #a87c63;
   position: absolute;

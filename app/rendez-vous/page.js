@@ -133,8 +133,15 @@ export default function Home() {
           <div className={styles.dropdownContent} >
             {rdvOptionDisplay}
           </div>
-          <Row className='endRow' style={{ padding: '0 10%', width:'95%', marginTop:"2rem" }}>
+          <Row className='endRow  d-none d-lg-flex' style={{ padding: '0 10%', width:'95%', marginTop:"2rem" }}>
         <Col md={{ size: 5 }} lg={{ size: 4 }} xl={{ size: 3 }}>
+          <div className='button'>
+            <div  className='button-top transparent'>Valider</div>
+          </div>
+        </Col>
+      </Row>
+      <Row className='endRow d-lg-none' style={{  width:'90% ', marginTop:"2rem", display:'flex', flex:'row', justifyContent:'center', marginLeft:'5%' }}>
+        <Col md={{ size: 6 }} lg={{ size: 4 }} xl={{ size: 3 }}>
           <div className='button'>
             <div  className='button-top transparent'>Valider</div>
           </div>
