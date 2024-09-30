@@ -93,7 +93,7 @@
 
 .lastRow {
   /* margin-bottom: 10dvh; */
-  height: 14dvh;
+  height: 7dvh;
   width: 100dvw;
   background-color: #a87c63;
   justify-content: center;
@@ -114,6 +114,6 @@
    
   bottom: 8dvw;
   }
-  bottom: 15dvh;
+  bottom: 14dvh;
   padding: 0 !important;
 }
