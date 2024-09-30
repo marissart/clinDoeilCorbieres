@@ -93,11 +93,12 @@
 
 .lastRow {
   /* margin-bottom: 10dvh; */
-  height: 10dvw;
+  height: 14dvh;
   width: 100dvw;
   background-color: #a87c63;
   justify-content: center;
   @media (min-width : 1200px) {
+    height: 10dvw;
     justify-content: space-between;
   }
 
