@@ -36,7 +36,7 @@ export default function Home() {
           </p>
           </Col>
         </Row>
-        <Row className={styles.lastRow}>
+        <Row className={`${styles.lastRow} d-none d-lg-flex`}>
           <Col lg={{size :  4 }} className={styles.lastRowCol}>
           <Image src={'/magasin.jpg'}  className={styles.lastRowImage} height={20000} width={2000} />
           </Col>
@@ -45,6 +45,11 @@ export default function Home() {
           </Col>
           <Col lg={{size :  4 }} className={styles.lastRowCol} style={{alignItems:'flex-end'}}>
           <Image src={'/test.jpg'}  className={styles.lastRowImage} height={20000} width={2000} />
+          </Col>
+        </Row>
+        <Row className={`${styles.lastRow} d-lg-none`}>
+          <Col xs={{size :  10 }} className={styles.lastRowCol}>
+          <Image src={'/magasin.jpg'}  className={styles.lastRowImage} height={20000} width={2000} />
           </Col>
         </Row>
       </main>

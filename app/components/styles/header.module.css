@@ -16,7 +16,7 @@
         height: fit-content;
         width: fit-content;
         padding: 1vh 4vw;
-        position: absolute;
+        position:fixed;
         top: 11dvh;
         right : 0vw;
         z-index: 20;
@@ -62,10 +62,7 @@
    top: 0;
    left: 0;
     justify-content: space-between;
-    transition:
-    width 1s,
-    height 1s,
-    opacity 1s, ;
+   
     /* position:sticky;
     top: 0; */
     z-index: 2;

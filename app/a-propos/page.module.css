@@ -3,6 +3,7 @@
   /* height: 100dvh;
   overflow-y: hidden; */
 }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -10,13 +11,13 @@
   justify-content: center;
   padding: 0 2rem;
   min-height: 88vh;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* margin-top:18dvh; */
-  background: rgb(253,253,253);
+  background: rgb(253, 253, 253);
 
 }
 
-.title{
+.title {
   font-size: 3rem;
   color: #a87c63;
   font-weight: 600;
@@ -25,9 +26,11 @@
 .banner {
   width: 100vw;
   padding: 4dvh 4vw;
+
   @media (min-width : 1200px) {
     height: 80vh;
   }
+
   height: 75dvh;
   overflow-y: scroll;
   display: flex;
@@ -38,41 +41,54 @@
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width : 1200px) {
+    background-position: center;
+  }
+
   margin-bottom: 4vh;
   background-image: url('/ordinateur.jpg');
   background-image: url('/caisse.jpg');
 }
 
-.mainRowImage{
-  position:relative;
-  
+.mainRowImage {
+  position: relative;
+
   height: auto;
   border: #a87c63 2px solid;
 }
 
-#etageres{
-  width: 13dvw;
+#etageres {
+  width: 20dvw;
   z-index: 2;
-  left : 2dvw;
-  
+  left: 2dvw;
+  @media (min-width : 1200px) {
+    width: 13dvw;
+  }
   /* top:4dvh */
 }
 
-#caisse{
-  width: 25dvw;
+#caisse {
+  width:60dvw;
+  @media (min-width : 1200px) {
+    width: 25dvw;
+  }
   /* left : -4dvw */
   /* top:4dvh */
 }
 
-.mainRow{
+.mainRow {
   align-items: center;
   padding: 4dvh 0 23dvh 0;
-  
+
 }
 
 .lastRowImage {
   height: auto;
-  width: 97%;
+  @media (min-width : 1200px) {
+ width: 97%;  
+  }
+  width: 100%;
 }
 
 .lastRow {
@@ -80,8 +96,11 @@
   height: 10dvw;
   width: 100dvw;
   background-color: #a87c63;
-  justify-content: space-between;
-  
+  justify-content: center;
+  @media (min-width : 1200px) {
+    justify-content: space-between;
+  }
+
   /* align-items: flex-end; */
 }
 
@@ -89,7 +108,11 @@
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  position:relative;
+  position: relative;
+  @media (min-width : 1200px) {
+   
   bottom: 8dvw;
+  }
+  bottom: 15dvh;
   padding: 0 !important;
 }
