@@ -5,6 +5,9 @@ import facebook from 'react-useanimations/lib/facebook'
 import instagram from "react-useanimations/lib/instagram";
 import linkedin from "react-useanimations/lib/linkedin";
 import menu2 from "react-useanimations/lib/menu2"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons"
 
 import { useState } from 'react';
 import Image from 'next/image';
@@ -25,17 +28,18 @@ export default function Header(props) {
                 </div>
                 <div id={styles.iconDiv}>
                     <p className={styles.telephone}>04 11 66 95 10</p>
-                    <UseAnimations animation={instagram} size={35} className={styles.icon} />
-                    <UseAnimations animation={facebook} size={35} className={styles.icon} />
+                    <FontAwesomeIcon icon={faFacebook} className={`${styles.icon} d-lg-flex d-none`} />
+                    <FontAwesomeIcon icon={faInstagram} className={`${styles.icon} d-lg-flex d-none`} />
                     {/* <UseAnimations animation={linkedin} size={35} className={styles.icon} /> */}
-                    <UseAnimations animation={menu2} size={35} className={styles.icon} id={styles.menu} onClick={() => setShow(!show)} />
+                    <FontAwesomeIcon icon={faBars}  className={styles.icon} id={styles.menu} onClick={() => setShow(!show)} />
                 </div>
             </div>
-           {/* { show && <div id={styles.menuDiv}>
-                <a href="/portfolio" style={{ textDecoration: "none", color: 'black' }}><p className={styles.menuOption}>Portfolio</p></a>
-                <a href="/contact" style={{ textDecoration: "none", color: 'black' }}><p className={styles.menuOption}>Contact</p></a>
-                <a href="/propos" style={{ textDecoration: "none", color: 'black' }}><p className={styles.menuOption}>A propos</p></a>
-            </div>} */}
+           { show && <div id={styles.menuDiv}>
+           <a href="/" style={{ textDecoration: "none", color: '#fdfffc' }}><p className={styles.menuOption}>Accueil</p></a>
+                <a href="/catalogue" style={{ textDecoration: "none", color: '#fdfffc' }}><p className={styles.menuOption}>Catalogue</p></a>
+                <a href="/rendez-vous" style={{ textDecoration: "none", color: '#fdfffc' }}><p className={styles.menuOption}>Rendez-vous</p></a>
+                <a href="/a-propos" style={{ textDecoration: "none", color: '#fdfffc' }}><p className={styles.menuOption}>A propos</p></a>
+            </div>}
         </div>
     )
 }

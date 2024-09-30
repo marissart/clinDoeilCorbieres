@@ -11,10 +11,10 @@ export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(null);
   console.log("🚀 ~ Home ~ selectedIndex:", selectedIndex)
   const images = [
-    '/reparation.webp',
-    '/lunette.webp',
-    '/lentilles.webp',
-    '/test.webp'
+    { link: '/reparation.webp', text: 'entretien, ajustage et réparations de vos lunettes' },
+    { link: '/lunette.webp', text: 'accompagnement et conseils dans le choix de votre monture et de vos verres, tiers payant avec votre mutuelle' },
+    { link: '/lentilles.webp', text: 'commande de tous types de lentilles, adaptation en lentilles souples et apprentissage de la pose de vos premières lentilles' },
+    { link: '/test.webp', text: 'examen de la vue afin de pouvoir renouveler vos lunettes grâce à la modification de votre ordonnance ' }
   ];
 
   const handleImageClick = (index) => {
@@ -68,13 +68,17 @@ export default function Home() {
 
           {(selectedIndex !== null) &&
             <Row className={styles.imageSection} ><Col xs={{ size: 6, offset: 0 }} lg={{ size: 4, offset: 0 }}>
-              <p className={styles.visible}>Lorem psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              {images.map((src, index) => {
+                if (selectedIndex === index) return (
+                  <p className={styles.visible}>{src.text}</p>
+                )
+              })}
             </Col>
               {images.map((src, index) => {
                 if (selectedIndex === index) return (
                   <Col key={index} xs={{ size: 6, offset: 0 }} lg={{ size: 2, offset: 0 }} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                     <Image
-                      src={src}
+                      src={src.link}
                       width={200}
                       height={200}
                       className={`${styles.image} ${selectedIndex !== null && selectedIndex !== index ? styles.hidden : styles.right} `}
@@ -90,7 +94,7 @@ export default function Home() {
             {images.map((src, index) => (
               <Col key={index} xs={{ size: 6, offset: 0 }} lg={{ size: 2, offset: 0 }} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
                 <Image
-                  src={src}
+                  src={src.link}
                   width={200}
                   height={200}
                   className={`${styles.image} ${selectedIndex !== null && selectedIndex !== index ? styles.hidden : styles.right} `}
@@ -111,12 +115,12 @@ export default function Home() {
 
             <p className={styles.contactCardDay}>Mardi au Vendredi :</p>
 
-              <p className={styles.contactCardInfo}>8h30 - 18h30</p>
+            <p className={styles.contactCardInfo}>8h30 - 18h30</p>
 
-              <p className={styles.contactCardInfo}>14h30 - 19h00</p>
+            <p className={styles.contactCardInfo}>14h30 - 19h00</p>
 
-              <p className={styles.contactCardDay}>Samedi :</p>
-              <p className={styles.contactCardInfo}> 9h30 - 13h00</p></Col>
+            <p className={styles.contactCardDay}>Samedi :</p>
+            <p className={styles.contactCardInfo}> 9h30 - 13h00</p></Col>
         </Row>
 
         <Row className={`${styles.Row} `} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>

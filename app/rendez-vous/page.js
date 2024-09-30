@@ -10,11 +10,30 @@ import Image from "next/image";
 export default function Home() {
 
   const [contactState, setContactState] = useState({});
+  const [show, setShow]= useState(false)
   const [valide1, setValide1] = useState(true);
   const [valide2, setValide2] = useState(true);
   const [valide3, setValide3] = useState(true)
   const [valide4, setValide4] = useState(true)
+  function handelClick() {
+    console.log("🚀 ~ file: Professionnels.js:152 ~ handelClick ~ state.no:", state.nom)
+    if (!state.nom || !state.prenom || !state.mail || !state.phone || !state.state) {
 
+      if (!state.prenom) { setValide1(true) }
+      if (!state.nom) { setValide2(true) }
+      if (!state.firm) { setValide3(true) }
+      if (!state.mail) { setValide4(true) }
+      if (!state.phone) { setValide5(true) }
+    } else {
+      fetch('https://agencenuisiblesbackend/contact/marianne', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ state }),
+      })
+      setState({})
+      setShow(true)
+    }
+  }
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setContactState((prevProps) => ({
@@ -34,7 +53,7 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <Row className={styles.banner}>
-          <Col lg={{size : 4}} className={styles.form}>
+         {!show && <Col lg={{size : 4}} className={styles.form}>
           <Row>
             <Col lg={{size : 5}} >
             <FormGroup>
@@ -121,7 +140,10 @@ export default function Home() {
           </div>
         </Col>
       </Row>
-          </Col>
+          </Col>} 
+          {show && <Col lg={{size : 4}} className={styles.form} style={{textAlign:'center', color:'white'}}>
+          <h3>Nous avons bien reçu votre demande de rendez-vous et nous vous recontacterons sous peu</h3>
+          </Col>}
         </Row>
       
        
