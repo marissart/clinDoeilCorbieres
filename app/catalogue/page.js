@@ -92,7 +92,7 @@ export default function Home() {
     return (
       <Col onMouseEnter={() => setShow(true)} lg={{ size: 4 }} xs={{ size: (selected !== null) ? 11 : 6 }} className={`${styles.logoCol}  ${show ? styles.logoColShow : styles.nothing}`} style={style}>
         <Image
-          onClick={() => setSelected(m.name)}
+          onClick={() => (selected === null) ? setSelected(m.name) : setSelected(null)}
           height={300}
           width={300}
           className={styles.logos}
@@ -143,7 +143,7 @@ export default function Home() {
           </Col>}
           <Col onMouseEnter={() => setShow(true)} lg={{ size: 4 }} className={`${styles.logoCol} ${show ? styles.nothing : styles.n} d-none d-lg-flex`} >
             <Image
-              onClick={() => setSelected("Dandy")}
+              onClick={() => (selected === null) ? setSelected("Dandy") : setSelected(null)}
               height={300}
               width={300}
               className={styles.logos}
