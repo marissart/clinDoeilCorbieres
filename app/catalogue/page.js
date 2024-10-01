@@ -43,7 +43,7 @@ export default function Home() {
       'https://www.opticalfactory.fr/wp-content/uploads/2023/10/nude-eyewear-05.jpg',]
   },
   {
-    name: "Dandy", link: '/dandy.png', text: "Les lunettes et montures Dandy sont rigoureusement fabriquées en Italie et méritent d'être incluses dans la sélection des principales marques de Stylottica pour leur histoire faite de passion, de savoir-faire manuel et de savoir-faire. La marque de lunettes Dandy est née en Italie dans les années 70 et satisfait aujourd'hui les vrais connaisseurs et collectionneurs de montures entièrement faites à la main.",
+    name: "Dandy", link: '/dandy.png', text: "Les lunettes et montures Dandy sont rigoureusement fabriquées en Italie et brillent pour leur histoire faite de passion, de savoir-faire manuel et de savoir-faire, nées en Italie dans les années 70 et satisfaient aujourd'hui les vrais connaisseurs et collectionneurs de montures entièrement faites à la main.",
     image: [
       'https://dandyseyewear.com/wp-content/uploads/2021/11/manifattura-occhiali-danys-eyewear.jpg',
       'https://dandyseyewear.com/wp-content/uploads/2024/07/foto-lookbook.jpg',
@@ -53,10 +53,7 @@ export default function Home() {
   },
   {
     name: "Outspoken", link: '/outspoken.png', text: "Outspoken, une marque hollandaise de montures de lunette au style original et coloré",
-    image: ['https://www.frameworkeyewear.com/wp-content/uploads/sb-instagram-feed-images/330051184_3456563784671082_1298269637017549271_n.webpfull.jpg',
-      'https://scontent-fra3-1.xx.fbcdn.net/v/t39.30808-6/441528872_1048052613538957_5568120393133263971_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=2sCveWUjDHwQ7kNvgFITDub&_nc_ht=scontent-fra3-1.xx&_nc_gid=AT0nhCGGMkzsYf9jeWcW6Eq&oh=00_AYCkawDeq6yAxbkdWUVhq92z8Pzl6YFn66aU__7YbfhZ3w&oe=66F1A559',
-      'https://scontent-fra5-2.xx.fbcdn.net/v/t39.30808-6/444488686_1048029213541297_3001308057608613980_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PBgJNJ108_QQ7kNvgHSMsvu&_nc_ht=scontent-fra5-2.xx&oh=00_AYBzE77EjK9djoaMDtuHkBEc0nDvKQakD56nlbin-o4ruw&oe=66F1C9C0',
-      'https://www.frameworkeyewear.com/wp-content/uploads/2023/03/outspokenholland_LOOKBOOK014679-687x1030.jpg'],
+    image: ['https://www.frameworkeyewear.com/wp-content/uploads/sb-instagram-feed-images/330051184_3456563784671082_1298269637017549271_n.webpfull.jpg','https://www.frameworkeyewear.com/wp-content/uploads/2023/03/outspokenholland_LOOKBOOK014679-687x1030.jpg'],
   },
   {
     name: "Hugo Conti", link: '/conti.png', text: "HUGOCONTI est née avec une mission claire :  offrir style, qualité et prix compétitif, garantissant que la mode avant-gardiste soit à la portée de tous.",
@@ -155,7 +152,7 @@ export default function Home() {
 
         </Row>
 
-        <Row className={`${styles.imagesRow} `} style={(selected !== null) ? { bottom: '0' } : {}}  >
+        <Row className={`${styles.imagesRow} d-none d-lg-flex`} style={(selected !== null) ? { bottom: '0' } : {}}  >
           {marques.map(m => {
             let style
             if (selected === m.name) {
