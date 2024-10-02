@@ -7,6 +7,7 @@ import Button from "./components/button";
 import Header from "./components/header";
 import { useEffect, useState } from "react";
 import { Star } from "@material-ui/icons";
+import Head from "next/head";
 export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(null);
   console.log("🚀 ~ Home ~ selectedIndex:", selectedIndex)
