@@ -151,7 +151,6 @@ export default function Home() {
           {(selected !== null) && textDisplay}
 
         </Row>
-
         <Row className={`${styles.imagesRow} d-none d-lg-flex`} style={(selected !== null) ? { bottom: '0' } : {}}  >
           {marques.map(m => {
             let style
