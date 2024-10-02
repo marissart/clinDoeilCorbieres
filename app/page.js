@@ -113,11 +113,12 @@ export default function Home() {
 
             <p className={styles.contactCardInfo}>11100</p>
 
-            <p className={styles.contactCardDay}>Mardi au Vendredi :</p>
+            <p className={styles.contactCardDay}>Mardi au Jeudi :</p>
 
             <p className={styles.contactCardInfo}>8h30 - 18h30</p>
 
-            <p className={styles.contactCardInfo}>14h30 - 19h00</p>
+            <p className={styles.contactCardDay}>Vendredi:</p>
+            <p className={styles.contactCardInfo}>9h30 - 18h30</p>
 
             <p className={styles.contactCardDay}>Samedi :</p>
             <p className={styles.contactCardInfo}> 9h30 - 13h00</p></Col>
