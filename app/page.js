@@ -55,6 +55,14 @@ export default function Home() {
 
   return (
     <div>
+       <Head>
+         
+          <meta
+            name="description"
+            content="Le clin d'oeil des corbières vous accueillent pour vous offrir un grand choix de montures de qualité pour vos lunettes de vue. N'hésitez pas à prendre rendez-vous avec nous"
+          />
+          
+        </Head>
       <Header />
       <main className={styles.main}>
         <Row className={styles.bannerDiv}>
