@@ -17,8 +17,8 @@ export default function Home() {
   const [valide4, setValide4] = useState(true)
   
   const [valide5, setValide5] = useState(true)
-  function handelClick() {
-    console.log("🚀 ~ file: Professionnels.js:152 ~ handelClick ~ contactState.no:", contactState.nom)
+  async function handelClick() {
+    console.log("🚀 ~ file: Professionnels.js:152 ~ handelClick ~ contactState.no:", contactState)
     if (!contactState.nom || !contactState.prenom || (!contactState.mail && !contactState.phone) || !contactState.option) {
 
       if (!contactState.prenom) { setValide1(true) }
@@ -27,11 +27,12 @@ export default function Home() {
       if (!contactState.mail) { setValide4(true) }
       if (!contactState.phone) { setValide3(true) }
     } else {
-      fetch('https://agencenuisiblesbackend/contact/marianne', {
+     const response = await fetch('https://agencenuisiblesbackend/contact/marianne', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contactState }),
       })
+     console.log("🚀 ~ handelClick ~ response:", response)
       setState({})
       setShow(true)
     }
@@ -47,7 +48,7 @@ export default function Home() {
   const rdvOptionDisplay = ['Achat lunettes', 'Examen de la vue + achat lunettes (examen offert)', 'Examen de la vue (30€)'].map((option, index) => (
     <p key={index} className={styles.option} onClick={() => setContactState((prevState) => ({
       ...prevState,
-      rdvOption: option
+      option: option
     }))}>{option}</p>
   ));
   return (
@@ -160,7 +161,7 @@ export default function Home() {
       </FormGroup>
       <p
             className={styles.select}
-          > {!contactState.rdvOption ? "option" : contactState.rdvOption}
+          > {!contactState.option ? "option" : contactState.option}
           </p>
           <div className={styles.dropdownContent} >
             {rdvOptionDisplay}

@@ -13,13 +13,13 @@ export default function Home() {
   const [selected, setSelected] = useState(null)
 
   const marques = [{
-    name: "Marant", link: '/marant.png', text: "La collection eyewear d'Isabel Marant s'associe à merveille avec sa ligne de prêt-à-porter puisqu'il s'agit ici d'incarner l'esthétique parisienne naturelle mais sophistiquée à travers une allure exigente mais sans arrogance. Etre cool et confort à travers des modèles simples mais glamour.",
+    name: "Marant", link: '/marant.png', text: "La collection eyewear d'Isabel Marant s'associe à merveille avec sa ligne de prêt-à-porter puisqu'il s'agit ici d'incarner l'esthétique parisienne naturelle mais sophistiquée à travers une allure exigente mais sans arrogance. Être cool et confort à travers des modèles simples mais glamours.",
     image: [
       'https://krys-krys-storage.omn.proximis.com/Imagestorage/images/2000/1600/658aa0c7a6206_65859059160cc_03_v2.jpg',
     ]
   },
   {
-    name: "GIGI", link: '/gigi.png', text: "Lunettes avec des designs colorés, chez GIGI STUDIOS, la culture et l'exploration artistique sont des lunettes uniques fabriquées à la main",
+    name: "GIGI", link: '/gigi.png', text: "Chez GIGI STUDIOS, la culture et l'exploration artistique vous offrent des lunettes uniques fabriquées à la main",
     image: ['https://gigistudios.com/cdn/shop/files/008_HOME_FW24_ICONS_COLECCTION_DESKTOP_6f31a07a-3b8b-4005-abf4-a9a5c1e9d118.jpg?crop=center&height=900&v=1724065061&width=1440',
       'https://gigistudios.com/cdn/shop/files/003_LANDING_FW24_ICONS_DESKTOP.jpg?crop=center&height=1800&v=1724072668&width=1440',
       'https://gigistudios.com/cdn/shop/files/009_HOME_FW24_LAB_COLECCTION_DESKTOP_3b5798ef-851a-49eb-8707-2726bcfe4944.jpg?crop=center&height=900&v=1724065103&width=1440',
@@ -28,7 +28,7 @@ export default function Home() {
       'https://gigistudios.com/cdn/shop/files/006_LANDING_XS_MOBILE_19d48326-5a17-49db-8fb2-096a2cf505a8.jpg?crop=center&height=900&v=1724076732&width=1440']
   },
   {
-    name: "Roussilhe", link: 'https://www.roussilhe.fr/img/1674230830.svg', text: "Installés au cœur du bassin d'Oyonnax, les Ateliers Roussilhe sont le lieu de création et de production de nos collections en acétate. Design, prototype, découpe, incrustation de charnières, pose de rivets, polissage… toutes les étapes sont réalisées sur place. Les collections conservent la tradition d'un savoir-faire artisanal à la française.",
+    name: "Roussilhe", link: 'https://www.roussilhe.fr/img/1674230830.svg', text: "Installés au cœur du bassin d'Oyonnax, les Ateliers Roussilhe sont le lieu de création et de production de leurs collections en acétate. Design, prototype, découpe, incrustation de charnières, pose de rivets, polissage… toutes les étapes sont réalisées sur place. Les collections conservent la tradition d'un savoir-faire artisanal à la française.",
     image: ['https://www.roussilhe.fr/c/11-category_default/roussilhe-pop.jpg',
       'https://www.roussilhe.fr/c/13-category_default/roussilhe-popiz.jpg',
       // "https://www.roussilhe.fr/c/10-category_default/nos-collections.jpg"
@@ -43,7 +43,7 @@ export default function Home() {
       'https://www.opticalfactory.fr/wp-content/uploads/2023/10/nude-eyewear-05.jpg',]
   },
   {
-    name: "Dandy", link: '/dandy.png', text: "Les lunettes et montures Dandy sont rigoureusement fabriquées en Italie et brillent pour leur histoire faite de passion, de savoir-faire manuel et de savoir-faire, nées en Italie dans les années 70 et satisfaient aujourd'hui les vrais connaisseurs et collectionneurs de montures entièrement faites à la main.",
+    name: "Dandy", link: '/dandy.png', text: "Les lunettes Dandy's sont rigoureusement fabriquées en Italie grâce à une savoir-faire unique. Nées en Italie dans les années 70 elles sauront satisaires les amateurs de montures entièrement faites à la main.",
     image: [
       'https://dandyseyewear.com/wp-content/uploads/2021/11/manifattura-occhiali-danys-eyewear.jpg',
       'https://dandyseyewear.com/wp-content/uploads/2024/07/foto-lookbook.jpg',
@@ -52,7 +52,7 @@ export default function Home() {
     ]
   },
   {
-    name: "Outspoken", link: '/outspoken.png', text: "Outspoken, une marque hollandaise de montures de lunette au style original et coloré",
+    name: "Outspoken", link: '/outspoken.png', text: "Outspoken, une marque hollandaise de lunettes au style original et coloré.",
     image: ['https://www.frameworkeyewear.com/wp-content/uploads/sb-instagram-feed-images/330051184_3456563784671082_1298269637017549271_n.webpfull.jpg','https://www.frameworkeyewear.com/wp-content/uploads/2023/03/outspokenholland_LOOKBOOK014679-687x1030.jpg'],
   },
   {
@@ -63,7 +63,7 @@ export default function Home() {
     ]
   },
   {
-    name: "Andy Brook", link: '/brook.png', text: "Andybrook est une jeune marque française fondé en 2017, qui proposent des lunettes optiques et solaires tendances et originales. Les fondateurs, un groupe d’amis depuis l’enfance décident de s’allier afin de créer la marque Andybrook. La marque française met en lumière des modèles design, innovants et modernes conçues avec des matériaux de grande qualité.",
+    name: "Andy Brook", link: '/brook.png', text: "Andybrook est une jeune marque française fondée en 2017, qui propose des lunettes optiques et solaires tendances et originales.",
     image: [
 
       'https://andy-brook.com/fr/wp-content/uploads/2024/06/enfants-600x371.jpg.webp',
@@ -90,8 +90,8 @@ export default function Home() {
       <Col onMouseEnter={() => setShow(true)} lg={{ size: 4 }} xs={{ size: (selected !== null) ? 9 : 6 }} className={`${styles.logoCol}  ${show ? styles.logoColShow : styles.nothing}`} style={style}>
         <Image
           onClick={() => (selected === null) ? setSelected(m.name) : setSelected(null)}
-          height={300}
-          width={300}
+          height={600}
+          width={600}
           className={styles.logos}
           src={m.link}
         />
