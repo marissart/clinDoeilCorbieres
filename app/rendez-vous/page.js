@@ -18,8 +18,7 @@ export default function Home() {
   
   const [valide5, setValide5] = useState(true)
   async function handelClick() {
-    console.log("🚀 ~ file: Professionnels.js:152 ~ handelClick ~ contactState.no:", contactState)
-    if (!contactState.nom || !contactState.prenom || (!contactState.mail && !contactState.phone) || !contactState.option) {
+    if (!contactState.nom || !contactState.prenom ||  !contactState.option) {
 
       if (!contactState.prenom) { setValide1(true) }
       if (!contactState.nom) { setValide2(true) }
@@ -27,7 +26,7 @@ export default function Home() {
       if (!contactState.mail) { setValide4(true) }
       if (!contactState.phone) { setValide3(true) }
     } else {
-     const response = await fetch('https://agencenuisiblesbackend/contact/marianne', {
+     const response = await fetch('http://localhost:3002/contact/marianne', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contactState }),
@@ -161,7 +160,7 @@ export default function Home() {
       </FormGroup>
       <p
             className={styles.select}
-          > {!contactState.option ? "option" : contactState.option}
+          > {!contactState.option ? "Option" : contactState.option}
           </p>
           <div className={styles.dropdownContent} >
             {rdvOptionDisplay}

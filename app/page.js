@@ -120,7 +120,7 @@ export default function Home() {
             <p className={styles.contactCardInfo}>04 11 66 95 10</p>
             <p className={styles.contactCardInfo}>7 Av. de Louate</p>
 
-            <p className={styles.contactCardInfo}>11100</p>
+            <p className={styles.contactCardInfo}>11100 Montredon Des Corbières</p>
 
             <p className={styles.contactCardDay}>Mardi au Jeudi :</p>
 
