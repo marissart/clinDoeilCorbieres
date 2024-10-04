@@ -19,7 +19,7 @@ export default function Home() {
     ]
   },
   {
-    name: "GIGI", link: '/gigi.png', text: "Chez GIGI STUDIOS, la culture et l'exploration artistique vous offrent des lunettes uniques fabriquées à la main. Avec ses montures colorées ou sobres GIGI Studio s'adapte au style unique de chacun.",
+    name: "GIGI", link: '/gigi.png', text: "Chez GIGI STUDIOS, la culture et l'exploration artistique vous offrent des lunettes uniques fabriquées à la main. Avec ses montures sobres ou colorées GIGI STUDIOS s'adapte au style unique de chacun.",
     image: ['https://gigistudios.com/cdn/shop/files/008_HOME_FW24_ICONS_COLECCTION_DESKTOP_6f31a07a-3b8b-4005-abf4-a9a5c1e9d118.jpg?crop=center&height=900&v=1724065061&width=1440',
       'https://gigistudios.com/cdn/shop/files/003_LANDING_FW24_ICONS_DESKTOP.jpg?crop=center&height=1800&v=1724072668&width=1440',
       'https://gigistudios.com/cdn/shop/files/009_HOME_FW24_LAB_COLECCTION_DESKTOP_3b5798ef-851a-49eb-8707-2726bcfe4944.jpg?crop=center&height=900&v=1724065103&width=1440',
