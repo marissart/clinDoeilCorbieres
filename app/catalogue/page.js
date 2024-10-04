@@ -43,7 +43,7 @@ export default function Home() {
       'https://www.opticalfactory.fr/wp-content/uploads/2023/10/nude-eyewear-05.jpg',]
   },
   {
-    name: "Dandy", link: '/dandy.png', text: "Les lunettes Dandy's sont rigoureusement fabriquées en Italie grâce à une savoir-faire unique. Nées en Italie dans les années 70 elles sauront satisaires les amateurs de montures entièrement faites à la main.",
+    name: "Dandy", link: '/dandy.png', text: "Les lunettes Dandy's sont rigoureusement fabriquées en Italie grâce à un savoir-faire unique. Nées en Italie dans les années 70 elles sauront satisaires les amateurs de montures entièrement faites à la main.",
     image: [
       'https://dandyseyewear.com/wp-content/uploads/2021/11/manifattura-occhiali-danys-eyewear.jpg',
       'https://dandyseyewear.com/wp-content/uploads/2024/07/foto-lookbook.jpg',
