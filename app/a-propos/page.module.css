@@ -29,6 +29,7 @@
 
   @media (min-width : 1200px) {
     height: 80vh;
+    background-attachment: fixed;
   }
 
   height: 75dvh;
@@ -37,7 +38,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-attachment: fixed;
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
