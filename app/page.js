@@ -12,10 +12,10 @@ export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(null);
   console.log("🚀 ~ Home ~ selectedIndex:", selectedIndex)
   const images = [
-    { link: '/reparation.webp', text: 'entretien, ajustage et réparations de vos lunettes' },
-    { link: '/lunette.webp', text: 'accompagnement et conseils dans le choix de votre monture et de vos verres, tiers payant avec votre mutuelle' },
-    { link: '/lentilles.webp', text: 'commande de tous types de lentilles, adaptation en lentilles souples et apprentissage de la pose de vos premières lentilles' },
-    { link: '/test.webp', text: 'examen de la vue afin de pouvoir renouveler vos lunettes grâce à la modification de votre ordonnance ' }
+    { link: '/reparation.webp', text: 'Entretien, ajustage et réparations de vos lunettes...' },
+    { link: '/lunette.webp', text: 'Accompagnement et conseils dans le choix de votre monture et de vos verres, tiers payant avec votre mutuelle...' },
+    { link: '/lentilles.webp', text: 'Commande de tous types de lentilles, adaptation en lentilles souples et apprentissage de la pose de vos premières lentilles...' },
+    { link: '/test.webp', text: 'Examen de la vue afin de pouvoir renouveler vos lunettes grâce à la modification de votre ordonnance...' }
   ];
 
   const handleImageClick = (index) => {
