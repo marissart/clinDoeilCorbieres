@@ -122,7 +122,7 @@ export default function Home() {
 
             <p className={styles.contactCardInfo}>11100 Montredon Des Corbières</p>
 
-            <p className={styles.contactCardDay}>Mardi au Jeudi :</p>
+            <p className={styles.contactCardDay}>Mardi au Vendredi :</p>
 
             <p className={styles.contactCardInfo}>9h30 - 12h30 / 13h30 - 18h30</p>
 
