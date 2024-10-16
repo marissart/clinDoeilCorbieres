@@ -124,13 +124,10 @@ export default function Home() {
 
             <p className={styles.contactCardDay}>Mardi au Jeudi :</p>
 
-            <p className={styles.contactCardInfo}>8h30 - 18h30</p>
-
-            <p className={styles.contactCardDay}>Vendredi:</p>
-            <p className={styles.contactCardInfo}>9h30 - 18h30</p>
+            <p className={styles.contactCardInfo}>9h30 - 12h30 / 13h30 - 18h30</p>
 
             <p className={styles.contactCardDay}>Samedi :</p>
-            <p className={styles.contactCardInfo}> 9h30 - 13h00</p></Col>
+            <p className={styles.contactCardInfo}> 9h30 - 12h30</p></Col>
         </Row>
 
         <Row className={`${styles.Row} `} style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
