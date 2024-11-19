@@ -26,6 +26,7 @@ export default function Home() {
       if (!contactState.mail) { setValide4(true) }
       if (!contactState.phone) { setValide3(true) }
     } else {
+      
      const response = await fetch('https://agencenuisiblesbackend.vercel.app/contact/marianne', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
