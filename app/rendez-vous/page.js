@@ -31,7 +31,6 @@ export default function Home() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contactState }),
       })
-     console.log("🚀 ~ handelClick ~ response:", response)
      setContactState({})
       setShow(true)
     }
