@@ -31,8 +31,7 @@
     height: 90vh;
   background-attachment: fixed;
     margin-top: 10dvh !important;
-    
-  justify-content: flex-start;
+  justify-content: flex-start !important;
   }
   margin-top: 12dvh !important;
   height: 88dvh;
@@ -100,7 +99,7 @@
   background: rgba(141, 135, 136, 0.6);
 
   @media (min-width : 1200px) {
-    padding: 6vh 2vw;
+    padding: 8vh 2vw !important;
   }
 
   padding: 4vh 4vw;

@@ -26,13 +26,13 @@ export default function Home() {
       if (!contactState.mail) { setValide4(true) }
       if (!contactState.phone) { setValide3(true) }
     } else {
-     const response = await fetch('http://localhost:3002/contact/marianne', {
+     const response = await fetch('https://agencenuisiblesbackend.vercel.app/contact/marianne', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contactState }),
       })
      console.log("🚀 ~ handelClick ~ response:", response)
-      setState({})
+     setContactState({})
       setShow(true)
     }
   }
